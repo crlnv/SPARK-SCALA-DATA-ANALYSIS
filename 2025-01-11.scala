@@ -15,7 +15,7 @@ object AdvancedSparkExample {
     // Configuração para exibir resultados no console
     spark.sparkContext.setLogLevel("ERROR")
 
-    // Criar dados simulados
+    // Simulando dados
     val dados = Seq(
       ("2023-01-01", "Produto A", 100, 25.0),
       ("2023-01-01", "Produto B", 200, 30.0),
@@ -27,16 +27,16 @@ object AdvancedSparkExample {
       ("2023-01-04", "Produto B", 200, 31.0)
     )
 
-    // Definir schema para os dados
+    // Definindo schema para os dados
     import spark.implicits._
     val df = dados.toDF("data", "produto", "quantidade", "preco_unitario")
       .withColumn("data", to_date($"data", "yyyy-MM-dd"))
 
-    // Exibir o DataFrame inicial
+    // Exibir dataframe 
     println("Dados originais:")
     df.show()
 
-    // Análise avançada
+    // Análise 
 
     // 1. Calcular o valor total de vendas por dia e produto
     val vendasTotais = df.withColumn("valor_total", $"quantidade" * $"preco_unitario")
