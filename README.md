@@ -17,4 +17,6 @@ Outra parte importante da análise é identificar qual produto teve o maior valo
 **Exportação de Resultados** \
 Após realizar as análises, o script exporta os resultados para um diretório especificado em formato CSV. Isso permite que os resultados possam ser compartilhados ou usados em outras ferramentas de análise ou visualização.
 
+--
+
 A abordagem baseada em Spark garante que os mesmos códigos possam ser facilmente adaptados para lidar com datasets massivos em ambientes distribuídos. Portanto, a combinação de Scala e Spark não só é funcional para análises locais, mas também é uma solução escalável para outros cenários, principalmente em Big Data.
