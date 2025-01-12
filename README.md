@@ -1,5 +1,5 @@
 Olá! \
-Este script foi desenvolvido para demonstrar o uso do **Apache Spark** em **Scala** para análise de dados. Ele começa criando uma sessão Spark, que é o ponto de entrada para todas as operações no **Apache Spark**. A sessão é configurada para rodar localmente utilizando todos os núcleos da máquina (local[*]). O nível de log é configurado para mostrar apenas erros, o que permite um maior foco nas operações de análise.
+O script foi desenvolvido para demonstrar o uso do **Apache Spark** em **Scala** para análise de dados. Ele começa criando uma sessão Spark, que é o ponto de entrada para todas as operações no **Apache Spark**. A sessão é configurada para rodar localmente utilizando todos os núcleos da máquina (local[*]). O nível de log é configurado para mostrar apenas erros, o que permite um maior foco nas operações de análise.
 
 **Dados Simulados** \
 O script utiliza um conjunto de dados simulados, representando as vendas de produtos em diferentes datas. Cada linha contém informações sobre a data da venda, o nome do produto, a quantidade vendida e o preço unitário. Esses dados são convertidos em um dataframe do Spark, que facilita o processo de manipulação e análise dos dados.
